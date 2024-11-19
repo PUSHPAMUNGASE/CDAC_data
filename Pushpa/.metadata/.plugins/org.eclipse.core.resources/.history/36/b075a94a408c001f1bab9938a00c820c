@@ -1,0 +1,62 @@
+package Tree_Examples;
+
+public class Tree_Class
+{
+ private Node root;
+
+void create_Tree()
+{
+root=null;
+}
+void insert(Node r,Node n)//in bst manner //r is root , n is new node 
+{
+if(root==null)
+root=n;
+else
+{
+if(n.data<r.data)//if less to left
+{
+if(r.left==null)//empty left 
+	{
+r.left = n;
+System.out.println(n.data + " inserted");
+}
+else
+insert(r.left,n);//recursion call
+}
+else//if equal or greater than to right
+	{
+if(r.right==null)//empty left 
+	{
+r.right = n;
+System.out.println(n.data + " inserted");
+}
+else
+insert(r.right,n);//recursion call 
+}
+
+}
+
+}
+void inorder(Node r) {
+if (r != null) {//LPR 
+	inorder(r.left);//L
+	System.out.print(r.data + ",");//P 
+	inorder(r.right);//L }
+}
+}
+public static void main(String args[])
+{
+Tree_Class obj=new Tree_Class();
+obj.create_Tree();
+Node x=new Node(10);
+obj.insert(obj.root,new Node(10));
+obj.insert(obj.root,new Node(30));
+obj.insert(obj.root,new Node(20));
+obj.insert(obj.root,new Node(5));
+obj.insert(obj.root,new Node(15));
+System.out.println("Tree has:");
+obj.inorder(obj.root);
+}
+
+}

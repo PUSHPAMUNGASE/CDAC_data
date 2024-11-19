@@ -1,0 +1,24 @@
+<!-- //it is a feather in js form
+//it is a object to handle only a asynchronous operation
+//ajax is a asynchronous operation of promise and also http request 
+//promise has three state
+//1.pending state
+//2.fulfilled state
+//then() handler
+//3.rejected state
+//catch() handler -->
+
+<script>
+    let record=new Promise(function(res,rej){
+console.log(typeof res,typeof rej);
+// res("API called!");
+rej("API failed")
+    })
+   
+    record.then(function(data){
+        console.log(data);
+    });
+    record.catch(function(data){
+        console.log(data);
+    });
+</script>

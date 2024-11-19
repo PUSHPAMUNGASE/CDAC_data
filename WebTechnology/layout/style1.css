@@ -1,0 +1,50 @@
+a
+{
+color: brown !important;
+
+}
+a:hover
+{
+
+    color: rgb(157, 165, 42) !important;
+}
+header
+{
+padding: 15px 0;
+
+}
+.slider
+{
+    padding: 15px 0;
+}
+h2
+{
+    padding: 15px 0;
+}
+
+footer
+{
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a{
+    color: #ccc !important;
+}
+footer h4
+{
+    color: white;
+}
+@media only screen and (max-width:576px)
+{
+    .logo
+    {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .top menu
+    {
+        justify-content: center !important;
+    }
+}

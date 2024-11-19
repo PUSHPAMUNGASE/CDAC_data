@@ -1,0 +1,45 @@
+<script>
+  //regex are for to check vallidations
+  var exp = /^[1-9][0-9][0-9][0-9][0-9][0-9]$/;
+  var pincode = 456567;
+  var result = exp.test(pincode);
+  console.log(result);
+
+  var exp1 = /^[6-9][0-9]{9}$/; //not space allowed
+  var mobile = 9654345635;
+  var result = exp1.test(mobile);
+  console.log(result);
+  var exp2 = /^([a-zA-Z]{5})([0-9]{4})([a-zA-Z])$/;
+  var pancard = "qwewe3454tu";
+  var result = exp2.test(pancard);
+  console.log(result);
+
+  //regex for name
+  var exp3 = /^[a-zA-Z]([a-zA-Z ]+)?[a-zA-Z]$/; //? stand for optional + says minimum one character
+  var name = "pushpa";
+  var result = exp3.test(name);
+  console.log(result);
+
+  //a@a.com
+  //a@a.co.in
+  var exp4 = /^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/; //1        //2   //3     //4     //5        //6  //7
+  var email = "pushpa23@gmail.com";
+  var result = exp4.test(email);
+  console.log(result);
+//1 always start with alphanumeric character //2 @ is compulsory so out of
+//bracket // after @ alphanumeric character //4\. is compulsory so out of bracket
+// 5 after . minimum two character //6 \. is not compulsory so outside the
+//bracket //7 after . minimum two character
+  //password
+  //H@1vy#2
+  var exp5 = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#\$]).{4,12}$/;
+  //. act as must get satisfied each group
+  //?=current char onward
+  //?=.* check character current character onward each character anywhere in the group
+
+  var password = "@1vH";
+  var result = exp5.test(password);
+  console.log("for password");
+  console.log(result);
+</script>
+

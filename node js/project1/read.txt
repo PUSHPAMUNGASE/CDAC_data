@@ -1,0 +1,54 @@
+npm init -y      
+
+in json instead of test you can write start or run 
+
+//lisense:
+package.json is the summery of the project
+//must have package.ison file
+//npm init//initialize npm
+go in json file change path from test to start nodemon index.js
+
+//npm start
+
+
+
+package lock json-->
+it shows about dependencies
+in details
+from where it install
+how many libraries are present 
+
+
+
+//node-modules-->
+all local module are install or stored in node modules folder
+
+ db.users.insert(
+    [
+        {"name":"pushpa",
+        "age":23,
+        "place":"nagar"},
+         {"name":"komal",
+        "age":21,
+        "place":"nagar"},
+         {"name":"mansi",
+        "age":16,
+        "place":"thane"}
+        ])
+
+
+db.users.find({"place":"thane"});
+db.users.remove({"place":"thane"});
+
+db.users.update({
+    "place":"nagar"
+},{
+    $set:{
+        "name":"sakshi",
+        "age":24
+    }
+});
+
+//to install mongoose
+npm i mongoose
+

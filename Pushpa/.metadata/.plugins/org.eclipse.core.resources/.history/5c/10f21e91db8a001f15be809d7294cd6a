@@ -1,0 +1,67 @@
+package Linked_List_Examples;
+	//menu driven code for stack
+import java.util.Scanner;
+public class Main {
+
+	
+		
+
+
+		
+		    public static void main(String args[])
+		    {
+		        Scanner in=new Scanner(System.in);
+		       // Queue_Class obj=new Queue_Class();//object created
+		        Linked_List_Class obj =new  Linked_List_Class();
+		        //System.out.println("Enter size of  queue:");
+		        //int size=in.nextInt();
+		        obj.create_list();
+		        int ch,e;
+		        do
+		        {
+		            System.out.println("1.insert left");
+		            System.out.println("2.delete left");
+		            System.out.println("3.insert right");
+		            System.out.println("4.delete right");
+		            
+		            System.out.println("5.print element");
+		            System.out.println("6.search element");
+		            System.out.println("0.Exit");
+		            System.out.println("-----------");
+		            System.out.println("Choice:");
+		            ch=in.nextInt();
+		            switch(ch)
+		            {
+		                case 1:
+		                	System.out.println("enter element");
+		                	e=in.nextInt();
+		                    obj.insert_left(e);
+		                    break;
+		                case 2:
+		                    obj.delete_left();
+		                    break;
+		              
+		                case 3:
+		                   obj.insert_right(e);
+		                    break;
+		                case 4:
+		                   obj.delete_right();
+		                    break;
+		                case 5:
+			                   obj.print_list();;
+			                    break;
+		                case 6:
+			                   obj.search_list(e);
+			                    break;
+		                default:
+		                    System.out.println("Wrong option selsected:");
+		                    break;
+		            }
+
+		        }while(ch!=0);
+		    }
+
+		}
+
+
+

@@ -1,0 +1,19 @@
+/* .className{
+    property:value;
+} this are comments in the css file*/
+
+.d1 {
+  background-color: aqua;
+  border: 1px solid black;
+}
+/* #div1 {
+  background-color: aqua;
+} */
+h1,
+p,
+a ,div1{
+  color: brown;
+}
+*{
+    border:1px solid blue
+}

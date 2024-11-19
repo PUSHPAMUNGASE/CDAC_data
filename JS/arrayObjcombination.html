@@ -1,0 +1,43 @@
+<script>
+  var product = [
+    { name: "SHIRT", price: 1000, size: ["XL", "XXL"], path: "shirt.jpg" },
+    { name: "PUMA", price: 2000, size: ["XL", "XXL"], path: "shirt.jpg" },
+    {
+      name: "NIKE",
+      price: 3000,
+      size: ["XL", "XXL"],
+      path: "shirt.jpg",
+    },
+  ];
+
+  console.log(product);
+
+  for (let ans of product) {
+      document.write(`
+        <div class="c1">
+            <img src="${ans.path}" alt="">
+            <h2>${ans.price}</h2>
+            <p>${ans.name}</p>
+             </div>
+
+             
+        `);
+    console.log(ans);
+  }
+</script>
+
+<style
+>
+.c1{ 
+    float:left;
+   text-align: center;
+    margin-top: 40px;
+    margin-left: 15%;
+}
+p{
+    font-size: 30px;
+    color: rgb(78, 170, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>

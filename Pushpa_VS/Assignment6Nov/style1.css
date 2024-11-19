@@ -1,0 +1,77 @@
+#p1{
+ border: 2px solid black ;
+ width: 100px;
+            height: 100px;
+            font-size: 14px; /* Adjust text size */
+            overflow: hidden;
+  background-color: aqua;
+}
+#p2{
+    border: dashed black 2px;
+    height:200px;
+    width:200px;
+   
+}
+
+#p2:hover{
+    background-color: red;
+}
+
+#p3{
+    background-color: brown;
+}
+
+#h11{
+    size: 23px;
+    background-color: aqua;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+u{
+    text-decoration:none;
+}
+#p4{
+    /* text-align: center; */
+     /* text-align: right; */
+       /* text-align: left; */
+         text-align: justify;
+}
+
+#p5{
+    /* indent will give "samas" in marathi */
+  text-indent: 100px;  
+}
+
+#p6{
+    /* text-decoration-line: overline; */
+    /* text-decoration: underline; */
+      /* text-decoration: line-through; */
+        text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+    color:red;
+}
+
+#img1{
+width: 200px;
+height:200px;
+border-radius: 50%;
+}
+#p7{
+    line-height: double;
+    letter-spacing: 20px;
+    word-spacing: 5px;
+}
+
+#p8{
+
+}
+
+#p9{
+    background-color:red;
+}
+#d1{
+    background-color: aqua;
+}

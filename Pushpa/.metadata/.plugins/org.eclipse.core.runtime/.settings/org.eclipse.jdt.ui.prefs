@@ -1,0 +1,13 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="Queue_Examples.Circular_Queue"><rhs name\="Queue_Examples.Circular_Queue"/></lhs><lhs name\="Linked_List_Examples.Dynamic_stack_class"><rhs name\="Linked_List_Examples.Dynamic_stack_class"/></lhs><lhs name\="Linked_List_Examples.Node"><rhs name\="Linked_List_Examples.Node"/></lhs><lhs name\="Linked_List_Examples.Circular_LinkedList_Class"><rhs name\="Linked_List_Examples.Circular_LinkedList_Class"/></lhs><lhs name\="Linked_List_Examples.Dnode"><rhs name\="Linked_List_Examples.Dnode"/></lhs><lhs name\="Linked_List_Examples.Doubly_LinkedList_Class"><rhs name\="Linked_List_Examples.Doubly_LinkedList_Class"/></lhs><lhs name\="Linked_List_Examples.Circular_Doubly_LinkedList_Class"><rhs name\="Linked_List_Examples.Circular_Doubly_LinkedList_Class"/></lhs><lhs name\="Linked_List_Examples.Emp"><rhs name\="Linked_List_Examples.Emp"/></lhs><lhs name\="Linked_List_Examples.EmpLinkedList"><rhs name\="Linked_List_Examples.EmpLinkedList"/></lhs><lhs name\="AssignmentDS.ReverseString"><rhs name\="AssignmentDS.ReverseString"/></lhs><lhs name\="Linked_List_Examples.mergeTwoLinkedList"><rhs name\="Linked_List_Examples.mergeTwoLinkedList"/></lhs><lhs name\="AssignmentDSA21oct.Node"><rhs name\="AssignmentDSA21oct.Node"/></lhs><lhs name\="AssignmentDSA21oct.singlyLinkedList"><rhs name\="AssignmentDSA21oct.singlyLinkedList"/></lhs></history>
+content_assist_number_of_computers=20
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

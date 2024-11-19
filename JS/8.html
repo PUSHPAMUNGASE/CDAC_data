@@ -1,0 +1,14 @@
+<script>
+    'use strict'
+    let amount=150000;
+    let ROI=7.10;
+    let openingBal=0;
+    for(let i=1;i<=15;i++){
+        let interest=(openingBal+amount)*ROI/100;
+        let closingBAl=openingBal+amount+interest;
+        console.log(i,interest,closingBAl);
+        openingBal=closingBAl
+
+    }
+    console.log(i);//when var you can access i outside the loop but when let or const you cant
+</script>

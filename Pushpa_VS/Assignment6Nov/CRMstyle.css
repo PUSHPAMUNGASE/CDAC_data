@@ -1,0 +1,89 @@
+
+body{
+    border: 3px black solid;
+}
+#h1{
+   
+    background-color: rgb(83, 81, 81);
+    font-size: 50px;
+}
+#p1{
+  background-color: rgb(232, 225, 225); 
+  font-size: 30px;  
+  margin-top: -40px;
+}
+#s1{
+text-align: center;
+}
+#s2{
+  
+   
+    border: 2px solid black;
+    border-spacing: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+
+    margin-inline-start: 100px;
+}
+#h2{
+    background-color: rgb(60, 54, 54);
+}
+#divicon1{
+     background-color: rgb(60, 54, 54);
+}
+#divicon2{
+     background-color: rgb(60, 54, 54);
+}
+#contacts{
+    background-color: rgb(60, 54, 54);
+}
+#SalesActivity{
+     background-color: rgb(60, 54, 54);
+}
+
+#graphimage{
+    width: 800px;
+    height: 400px;
+}
+
+#plast{
+      background-color: rgb(60, 54, 54); 
+}
+
+#pen{
+    border:30px;
+    background-color: aliceblue;
+    display: inline-flex;
+    margin: 10px;
+     width:50px;
+    height:40px;
+      border-radius: 0.7rem;
+}
+#flag{
+    width:50px;
+    height:40px;
+     border:30px;
+     border-radius: 0.7rem;
+    background-color: aliceblue;
+    display: inline-flex;
+    margin: 10px;
+}
+#envolop{
+      width:50px;
+    height:40px;
+     border:30px;
+     border-radius: 0.7rem;
+    background-color: aliceblue;
+    display: inline-flex;
+    margin: 10px;
+}
+#bell{
+     width:50px;
+    height:40px;
+     border:30px;
+     border-radius: 0.7rem;
+    background-color: aliceblue;
+    display: inline-flex;
+    margin: 10px;
+}

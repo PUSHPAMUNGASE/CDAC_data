@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="iBox" />
+    <button id="btn">Set Alarm</button>
+    <div id="msg"></div>
+  </body>
+  <script>
+    document.querySelector("#btn").addEventListener("click", () => {
+      var delay = document.querySelector("#iBox").value;
+      var sec = Number(delay);
+      console.log(sec);
+      setTimeout(() => {
+        document.querySelector("#msg").innerHTML = "<h4>Wake Up</h4>";
+      }, sec);
+    });
+    console.log("Good morning");
+  </script>
+</html>

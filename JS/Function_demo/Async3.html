@@ -1,0 +1,24 @@
+<script>
+  //   console.log("start");
+  //   var xhr = new XMLHttpRequest();
+  //   xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+  //   xhr.send();
+  //   if (xhr.status == 200) {
+  //     console.log(xhr.responseText);
+  //   }
+  //   console.log("end");
+
+  console.log("start");
+  var res = fetch("https://jsonplaceholder.typicode.com/posts");
+  res
+    .then((response) => {
+      response.json();
+    })
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  console.log("end");
+</script>

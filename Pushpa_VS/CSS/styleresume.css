@@ -1,0 +1,36 @@
+form{
+    /* text-align: center; */
+    border: 2px solid black;
+    width: 500px;
+    padding: 50px;
+    margin:auto;
+}
+input,
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+input,
+label{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+}
+h4{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    background-color: blueviolet;
+    color: rgb;
+    font-size: large;
+    cursor: pointer;
+    width:400px;
+    height: 50px;
+    margin:50px;
+   
+}

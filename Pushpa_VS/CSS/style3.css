@@ -1,0 +1,17 @@
+/* descendent  */
+/* section p{
+    background-color: blueviolet;
+} */
+/* child selector */
+/* section>p{
+color: burlywood;
+} */
+ /* Adjecent siblings */
+/* section+p{
+color: burlywood;
+} */
+ /* general siblings */
+ section~p{
+color: rgb(236, 138, 10);
+}
+

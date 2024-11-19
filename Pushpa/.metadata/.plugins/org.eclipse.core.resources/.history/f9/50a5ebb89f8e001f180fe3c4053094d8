@@ -1,0 +1,95 @@
+package Linked_List_Examples;
+
+public class mergeTwoLinkedList {
+
+	Node root;//linked list uses container ship-uses has a relation
+	Node2 root2;
+	
+	void create_list()
+	{
+	root=null;//preparing with empty root 
+	root2=null;
+	}
+	
+	
+
+void insert_right(int data)
+{
+Node n=new Node(data);
+if(root==null)
+root=n;//n becomes 1st so root=
+ else
+{
+Node t=root;
+while(t.next!=null)
+{ t=t.next;
+
+}
+t.next=n;
+}
+
+System.out.println(root.data+" inserted");
+
+}
+
+
+
+
+void insert_right2(int data)
+{
+Node2 n=new Node2(data);
+if(root2==null)
+root2=n;//n becomes 1st so root=
+ else
+{
+Node2 t=root2;
+while(t.next!=null)
+{ t=t.next;
+
+}
+t.next=n;
+}
+
+System.out.println(root2.data+" inserted");
+
+}
+
+
+
+
+
+
+void print_list()
+{
+if(root==null)
+System.out.println("List Empty");
+else
+{
+Node t=root;
+while(t!=null)
+{ System.out.print("|"+t.data+"|->");
+t=t.next;
+}
+}
+}
+
+
+
+
+void print_list2()
+{
+if(root2==null)
+System.out.println("List Empty");
+else
+{
+Node2 t=root2;
+while(t!=null)
+{ System.out.print("|"+t.data+"|->");
+t=t.next;
+}
+}
+}
+
+
+	
+}

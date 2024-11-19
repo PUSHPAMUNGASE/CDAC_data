@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-left3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident soluta rem repellendus neque fuga, incidunt molestias officia quasi. Ea fugiat asperiores, tempore minima consequuntur dolorum quia ullam incidunt dignissimos. Eligendi.
+        </div>
+      <div class="col-right6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta et autem inventore nobis, iste, aut illum, hic architecto officia id saepe. Quaerat, qui esse! Vero atque odio necessitatibus nemo.
+        </div>
+        <div class="col-right3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident soluta rem repellendus neque fuga, incidunt molestias officia quasi. Ea fugiat asperiores, tempore minima consequuntur dolorum quia ullam incidunt dignissimos. Eligendi.
+        </div>
+      </div>
+    
+  </div>
+  <style>
+    .container {
+      width: 1200px;
+      border: 1px solid;
+      margin: auto;
+    }
+    .col-left3 {
+      /* width: 16.66%; */
+      /* width: 25%; */
+      width: calc(25%-30px);
+      border: 1px solid;
+      box-sizing: border-box;
+      /* box sizing is not allow us to add margin in col then the last column come down */
+      padding: 15px;
+        margin: 15px;
+    }
+    .col-right6 {
+      /* width: 16.66%; */
+      width: 50%;
+       /* width: calc(25%-30px); */
+      border:  solid;
+      box-sizing: border-box;
+      padding: 15px;
+      /* margin: 15px; */
+    }
+     .col-right3 {
+      /* width: 16.66%; */
+       width: calc(25%-30px);
+      /* width: 25%; */
+      border: 1px solid;
+      box-sizing: border-box;
+      padding: 15px;
+        margin: 15px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</div>

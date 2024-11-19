@@ -1,0 +1,18 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<button>Get data</button>
+<p></p>
+
+<script>
+  $(document).ready(function () {
+    $("button").click(function () {
+    //   alert("Fetching data...");
+    $.getJSON("2.json",function(data){
+        console.log(data);
+
+        $('p').html(`<u>${data.name}</u>`);//innerHTML property
+        //innerhtml=html in jquery
+    })
+    });
+  });
+</script>

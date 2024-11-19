@@ -1,0 +1,9 @@
+{
+  "name": "pushpa",
+  "age": 23,
+  "hobbies": ["playing", "reading"],
+  "place": {
+    "location": "pune",
+    "pincode": 422034
+  }
+}

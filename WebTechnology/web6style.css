@@ -1,0 +1,17 @@
+.container{
+    border: solid;
+    margin: auto;
+    width: 1200px;
+    display: flex;
+
+}
+.box{
+    border:solid;
+    width: 25%;
+    text-align: center;
+}
+
+.box img{
+    width: 100%;
+    /* aspect-ratio:16/9 */
+}

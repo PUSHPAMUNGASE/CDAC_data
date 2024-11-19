@@ -1,0 +1,14 @@
+package Linked_List_Examples;
+
+public class MergeListMain {
+
+	public static void main(String[] args) {
+		
+		mergeTwoLinkedList list1=new  mergeTwoLinkedList();
+		
+		
+		mergeTwoLinkedList list2=new  mergeTwoLinkedList();
+		
+	}
+
+}

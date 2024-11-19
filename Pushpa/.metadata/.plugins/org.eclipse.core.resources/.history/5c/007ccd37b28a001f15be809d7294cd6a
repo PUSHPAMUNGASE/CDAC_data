@@ -1,0 +1,64 @@
+package Queue_Examples;
+
+public class Circular_Queue {
+	
+
+	
+		 private int Q[], MaxSize, front,rear,count=0;
+
+		    public void create_Queue(int size) {
+		    	
+		     
+		        front=-1;
+		        rear=0;
+		        Q=new int[size];
+		        MaxSize = size;//init MaxSize
+		    }
+
+		    public void Enqueue(int e) {//inserting in queue
+		    	   front=front+1%MaxSize;
+		        Q[rear] = e;
+		        count++;
+		        System.out.println("Element " + e + " inserted:");
+		    }
+
+		    public boolean is_Full() {
+		        if (count == MaxSize )
+		            return true;
+		        else
+		            return false;
+		    }
+
+		   public  int Dequeue() {
+		        int temp = Q[front];
+		        rear=rear+1%MaxSize;
+		        count--;
+		        return (temp);
+
+		        //return(stack[tos--]);
+		    }
+
+		   public boolean is_Empty() {
+		        if (count==0)
+		            return true;
+		        else
+		            return false;
+		    }
+
+
+		   public void print_Queue() {//lifo print
+		        int i,c;
+		        i=front;
+		        c=0;
+		        while(c<count) {
+		        	System.out.println(Q[i]);
+		        	i=(i+1)%MaxSize;
+		        	c++;
+		        }
+
+		    }
+
+			
+	}
+
+

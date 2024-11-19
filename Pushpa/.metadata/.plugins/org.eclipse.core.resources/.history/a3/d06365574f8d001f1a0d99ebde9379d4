@@ -1,0 +1,100 @@
+package Sorting_Examples;
+
+import java.util.Scanner;
+
+//B) Write menu driven program  for Binary Search Tree. The menu includes 
+//-	Create a Binary Search Tree
+//-	Display
+//-	Delete a given element from Binary Search Tree
+
+public class binary_search2 {
+	
+	private Node root;
+
+	void create_Tree() {
+		root = null;
+		
+	}
+
+	void insert(Node r, Node n)// in bst manner
+	// r is root , n is new node
+	{
+		if (root == null)
+			root = n;
+		else {
+			if (n.data < r.data)// if less to left
+			{
+				if (r.left == null)// empty left
+				{
+					r.left = n;
+					System.out.println(n.data + " inserted");
+				} else
+					insert(r.left, n);// recursion call
+			} else// if equal or greater than to right
+			{
+				if (r.right == null)// empty left
+				{
+					r.right = n;
+					System.out.println(n.data + " inserted");
+				} else
+					insert(r.right, n);// recursion call
+
+			}
+
+		}
+
+	}
+	
+	
+	void display(Node r) {
+		
+		while(r!=null) 
+			
+	 }
+
+	
+
+	Node get_root() {
+		return root;
+	}
+
+	public static void main(String args[]) {
+		 binary_search2 obj = new binary_search2 ();
+		obj.create_Tree();
+		Node x = new Node(10);
+		Scanner in = new Scanner(System.in);
+		int ch, val;
+		do {
+			System.out.println("\n1.Enter element in tree");
+            System.out.println("2.display");
+			
+			System.out.println("Enter choice:");
+			ch = in.nextInt();
+
+			switch (ch) {
+			case 1:
+				System.out.println("\nEnter element in tree:");
+				val = in.nextInt();
+				obj.insert(obj.get_root(), new Node(val));
+				System.out.println(val+" added in tree!!");
+				break;
+			
+			case 2:
+				System.out.println("\nelements in tree are:");
+				obj.display(obj.get_root());
+				break;
+//
+//			case 3:
+//				System.out.println("\nTree in Postorder:");
+//				obj.postorder(obj.get_root());
+//				break;
+			case 0: System.out.println("Exiting....");
+            break;
+			}
+
+		} while (ch != 0);
+
+	}
+
+
+}
