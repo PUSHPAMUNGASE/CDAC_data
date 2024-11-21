@@ -50,6 +50,66 @@ function Header() {
                 Products
               </Link>
             </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/class1">
+                Class1
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/class2">
+                Class2
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/class3">
+                Class3
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/class4">
+                Class4
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/left">
+                Left
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/right">
+                Right
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/parent">
+                Parent
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/propsdrilling">
+                Propsdrilling and ContextAPI
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/parent2">
+                Parent2
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/child2">
+                Child2
+              </Link>
+            </li>
+
             {/* 
               <li class="nav-item">
                 <a

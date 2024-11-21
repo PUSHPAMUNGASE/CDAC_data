@@ -7,21 +7,23 @@ export default function Register() {
   var [count, setcount] = useState(100);
   var [name, setname] = useState("Pushpa");
   //when you visited the component useEffect is get called
-  // useEffect(() => {
+
+  //1 useEffect(() => {
   //   console.log("useEffect called",count,name);
 
   // })
 
   //when you change inside the page use effect get called  in only once
 
-  // useEffect(() => {
+  //2 useEffect(() => {
   //   console.log("useEffect called", count, name);
   // }, []);
 
-  // useEffect(() => {
+  //3 useEffect(() => {
   //   console.log("useEffect called", count, name);
   // }, [name]);
 
+  //4
   useEffect(() => {
     console.log("useEffect called", count, name)
     return () => {
