@@ -1,27 +1,32 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { datatransfer } from "../redux/slices/categorySlice";
 
 export default function Left(props) {
+  let dispatch = useDispatch();
+
   function f1(value) {
     console.log(value);
-    props.p1(value);
+     props.p1(value);
+    dispatch(datatransfer(value));
   }
   return (
     <div>
       <ul>
         <li
           onClick={() => {
-            f1("Category 1");
+            f1("electronics");
           }}
         >
-          Category 1
+          Electronics
         </li>
 
         <li
           onClick={() => {
-            f1("Category 2");
+            f1("jewelery");
           }}
         >
-          Category 2
+          Jewelery
         </li>
       </ul>
     </div>

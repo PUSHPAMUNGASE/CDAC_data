@@ -15,6 +15,7 @@ import Right from "./components/Right";
 import Parent from "./components/Parent";
 import Parent2 from "./components/Parent2";
 import Child2 from "./components/Child2";
+import Cart from "./components/Cart";
 
 const projectrout = createBrowserRouter([
   {
@@ -94,6 +95,10 @@ const projectrout = createBrowserRouter([
       {
         path: "child2",
         element: <Child2 />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
       },
     ],
   },

@@ -5,6 +5,8 @@ import App from "./components/App";
 import "./css/style.css";
 import projectrout from "./projectrout";
 import { RouterProvider } from "react-router-dom";
+import projectstore from "./redux/projectstore";
+ import { Provider } from "react-redux";
 //console.log(React);
 //console.log(ReactDOM);
 import { Outlet, Link } from "react-router-dom";
@@ -29,4 +31,8 @@ const result = ReactDOM.createRoot(document.getElementById("root"));
 
 result.render(<App />);
 
-result.render(<RouterProvider router={projectrout} />);
+result.render(
+  <Provider store={projectstore}>
+    <RouterProvider router={projectrout} />
+  </Provider>
+);
