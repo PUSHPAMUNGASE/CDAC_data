@@ -3,7 +3,7 @@ package example.hibernate.main;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-import example.hibernate.utils.HibernateUtilities;
+import example.hibernate.utils.HibernateConfig;
 
 public class RecordRetrivalExample {
 
@@ -12,7 +12,7 @@ public class RecordRetrivalExample {
 		try(
 				
 				
-				SessionFactory factory = HibernateUtilities.getSessionFactory();
+				SessionFactory factory = HibernateConfig.getSessionFactory();
 				Session session=factory.openSession();
 		    ){
 			//Loading an entity of type:Actor against on ID:A03

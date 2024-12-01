@@ -4,7 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import example.hibernate.utils.HibernateUtilities;
+import example.hibernate.utils.HibernateConfig;
 
 public class RecordDeletionExample {
 
@@ -12,7 +12,7 @@ public class RecordDeletionExample {
 		try(
 				
 				
-				SessionFactory factory = HibernateUtilities.getSessionFactory();
+				SessionFactory factory = HibernateConfig.getSessionFactory();
 				Session session=factory.openSession();
 		    ){
 			//Loading an entity of type:Actor against on ID:A03

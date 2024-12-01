@@ -4,7 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import example.hibernate.utils.HibernateUtilities;
+import example.hibernate.utils.HibernateConfig;
 
 
 public class RecordInsertionWithoutXMLExample {
@@ -13,11 +13,11 @@ public class RecordInsertionWithoutXMLExample {
 		try(
 				
 				
-				SessionFactory factory = HibernateUtilities.getSessionFactory();
+				SessionFactory factory = HibernateConfig.getSessionFactory();
 				Session session=factory.openSession();
 		    )
 		{
-			Actor actorObj=new Actor("A03","Song Joong","ki",39);
+			Actor actorObj=new Actor("A04","Ranbeer","Kapoor",43);
 			Transaction tx = session.beginTransaction();
 			session.persist(actorObj);
 			tx.commit();
