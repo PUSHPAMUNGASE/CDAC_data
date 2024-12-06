@@ -47,7 +47,7 @@ public class SpringWebApplicationIntializer implements WebApplicationInitializer
 		// TODO Auto-generated method stub
 
 		
-
+System.out.println("Application is being stated....");
 		WebApplicationContext webAppCtx= getWebApplicationContext();
 
 		//Building an object of dispatcherServlet based upon webappCtx
