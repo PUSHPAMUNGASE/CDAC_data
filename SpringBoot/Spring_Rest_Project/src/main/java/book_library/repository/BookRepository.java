@@ -13,4 +13,13 @@ public Collection<Book> getAllBooks(){
 	return allAvailableBooks;
 	
 }
+
+public Book getOneBook(int bookId) {
+	Book foundBook=BookStore.getOneBook(bookId);
+	return foundBook;
+}
+
+public void createNewBook(Book newBook) {
+	BookStore.createNewBook(newBook);
+}
 }

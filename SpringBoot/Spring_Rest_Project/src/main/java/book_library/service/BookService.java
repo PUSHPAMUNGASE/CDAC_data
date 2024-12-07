@@ -17,4 +17,15 @@ public Collection<Book>getAllBooks(){
 	return allAvailableBooks;
 	
 }
+
+public Book getOneBook(int bookId) {
+Book foundBook=	bookRepositoryReference.getOneBook(bookId);
+return foundBook;
+}
+
+public void createNewBook(Book newBook) {
+	bookRepositoryReference.createNewBook(newBook);
+	
+}
+
 }
